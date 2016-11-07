@@ -34,11 +34,9 @@ For this example, I will use [Metasploitable 1](https://www.vulnhub.com/entry/me
 
 Double click on the `.vmx` file `Metasploitable.vmx` and VMware will open with a prompt:
 
-![](setup_guide/metasploitable1.png)
+![](setup_guide/metasploitable2.png)
 
 Usually I select "I Copied It" so that it generates a new UUID for the VM, so that it doesn't clash with the original VM. There has been at least one occasion when this didn't work and I had to use "I Moved It" instead (may have been specified in the box description).
-
-![](setup_guide/metasploitable2.png)
 
 Then select the network option button and select "Host-only". Alternatively, you can also go into the box `Settings -> Network Adapter` and select `Private to my Mac` (must be named something similar on Windows).
 
@@ -58,7 +56,7 @@ From your attacking machine, find out your IP address with `ifconfig`:
 
 ![](setup_guide/metasploitable5.png)
 
-Now we search for the booted VM using Nmap to perform a ping scan with `nmap 192.168.245.1-254 -sP`, or if you are lazy and don't mind waiting a bit longer then remove the `-sP` option!:
+Now we search for the booted VM using Nmap to perform a ping scan with `nmap 192.168.245.1-254 -sP`, or if you are lazy and don't mind waiting a bit longer then remove the `-sP` option!
 
 ![](setup_guide/metasploitable6.png)
 
